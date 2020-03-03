@@ -1,0 +1,13 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: eurake-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.29.0.214:9090/eurake/
+    fetch-registry: false  #表示是否从EurekaServer获取注册信息，默认为true，表示需要从其他server同步信息
+    register-with-eureka: false #是否将自己注册到EurrkeServer，默认为true
